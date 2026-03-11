@@ -1,1 +1,1 @@
-This is Awesome Theme that was included in the tutorials 
+## This was Awesome Theme that was included in the Tutorials 
