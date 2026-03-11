@@ -1,0 +1,165 @@
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#333;
+    background:#eee;
+    font: sans-serif;
+}
+body{
+    padding: 20px;
+}
+
+/* Two-column layout: main content + sidebar */
+#content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+#sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#sidebar .widget {
+    margin-bottom: 24px;
+}
+
+#sidebar .widget-title {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    #content-wrapper {
+        flex-direction: column;
+    }
+    #sidebar {
+        width: 100%;
+    }
+}
+/*
+    Theme Name: Awesome Theme
+    Theme URI: http://ayesh.com/awesome-theme
+    Author: Ayesh
+    Description: A simple and awesome WordPress theme.
+    Version: 1.0
+    Author URI: http://ayesh.com
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags:black, white, responsive, one-column,two-columns, featured-images, custom-menu, custom-header,post-formats
+*/
+:root{
+    --Color-Ivory: #EEEBE2;
+    --Page-Padding-padding-global: 64px;
+}
+.menu-main-navigation-container{
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    padding: 0 var(--Page-Padding-padding-global, 64px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Color-Ivory,#EEEBE2);
+}
+.menu-main-navigation-container ul{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 48px;
+align-self: stretch;
+list-style: none;
+}
+.menu-main-navigation-container ul li{
+    list-style: none;
+}
+.menu-main-navigation-container ul li a{
+    text-decoration: none;
+color: var(--Color-Scheme-5-Text, #010203);
+/* Text/Regular/Normal */
+font-family: Ronzino;
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 400;
+line-height: 160%
+}
+
+/* Search form */
+.search-form {
+    margin: 18px 0;
+}
+
+.search-form .input-group {
+    display: flex;
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid #d6dce4;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.search-form .input-group:focus-within {
+    border-color: #5d87ff;
+    box-shadow: 0 10px 24px rgba(93, 135, 255, 0.24);
+}
+
+.search-form .form-control {
+    flex: 1;
+    border: 0;
+    border-radius: 0;
+    min-height: 46px;
+    padding: 10px 14px;
+    font-size: 16px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.search-form .form-control:focus {
+    box-shadow: none;
+}
+
+.search-form .form-control::placeholder {
+    color: #8a97a8;
+}
+
+.search-form .input-group-btn {
+    display: flex;
+}
+
+.search-form .btn.btn-primary {
+    border: 0;
+    border-radius: 0;
+    min-height: 46px;
+    padding: 0 16px;
+    background: linear-gradient(135deg, #5d87ff 0%, #3f6aeb 100%);
+    color: #fff;
+    font-weight: 600;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.search-form .btn.btn-primary:hover,
+.search-form .btn.btn-primary:focus {
+    filter: brightness(1.05);
+}
+
+.search-form .btn.btn-primary:active {
+    transform: translateY(1px);
+}

@@ -1,0 +1,25 @@
+/*
+    Theme Name: Awesome Theme
+    Theme URI: http://ayesh.com/awesome-theme
+    Author: Ayesh
+    Description: A simple and awesome WordPress theme.
+    Version: 1.0
+    Author URI: http://ayesh.com
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags:black, white, responsive, one-column,two-columns, featured-images, custom-menu, custom-header,post-formats
+*/
+:root{
+    --Color-Ivory: #EEEBE2;
+    --Page-Padding-padding-global: 64px;
+}
+.menu-main-navigation-container{
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    padding: 0 var(--Page-Padding-padding-global, 64px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Color-Ivory,#EEEBE2);
+}
